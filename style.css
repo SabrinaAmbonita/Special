@@ -220,15 +220,6 @@ span{
     animation: cursor 0.6s infinite;
 }
 
-#favorite-song h2 {
-    text-align: center; /* Menempatkan teks di tengah */
-    font-size: 2.5rem; /* Ukuran font lebih besar */
-    color: #b74b4b; /* Warna merah sesuai tema */
-    font-weight: bold;
-    margin-bottom: 1rem;
-    letter-spacing: 1px; /* Spasi antar huruf sedikit lebih lebar */
-}
-
 #audio {
     margin-top: 2rem;
     text-align: center;
@@ -328,7 +319,7 @@ span{
 #gallery {
     text-align: center;
     padding: 5rem 9%;
-    background-color: #161616;
+    background-color: black;
 }
 
 #gallery h2 {
@@ -391,7 +382,7 @@ span{
 
 #Message {
     padding: 5rem 9%;
-    background-color: #161616;
+    background-color: black;
 }
 
 #Message h2 {
