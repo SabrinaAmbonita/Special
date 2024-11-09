@@ -64,6 +64,8 @@ nav a.active{
     border-bottom: 3px solid #b74b4b;
 }
 
+
+
 @media(max-width:995px){
     nav{
         position: absolute;
@@ -218,6 +220,111 @@ span{
     animation: cursor 0.6s infinite;
 }
 
+#favorite-song h2 {
+    text-align: center; /* Menempatkan teks di tengah */
+    font-size: 2.5rem; /* Ukuran font lebih besar */
+    color: #b74b4b; /* Warna merah sesuai tema */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    letter-spacing: 1px; /* Spasi antar huruf sedikit lebih lebar */
+}
+
+#audio {
+    margin-top: 2rem;
+    text-align: center;
+    background-color: #161616; /* Sesuai tema hitam */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Shadow lebih dramatis */
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+#audio:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+    box-shadow: 0px 10px 50px rgba(183, 75, 75, 0.6); /* Efek cahaya merah */
+}
+
+#audio h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+#audio audio {
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid #b74b4b; /* Border merah */
+}
+
+#audio audio::-webkit-media-controls-panel {
+    background-color: #161616;
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+}
+
+#audio audio::-webkit-media-controls-play-button {
+    background-color: #b74b4b; /* Tombol play merah */
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#audio audio::-webkit-media-controls-volume-slider {
+    background-color: #b74b4b; /* Slider volume merah */
+}
+
+#audio audio::-webkit-media-controls-mute-button {
+    background-color: #b74b4b;
+    border-radius: 50%;
+}
+
+#audio .control-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#audio .control-buttons button {
+    background-color: transparent;
+    border: 2px solid #b74b4b;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#audio .control-buttons button:hover {
+    background-color: #b74b4b;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(183, 75, 75, 0.5);
+}
+
+@media (max-width: 768px) {
+    #audio {
+        width: 95%;
+        margin-top: 1.5rem;
+    }
+
+    #audio h2 {
+        font-size: 1.8rem;
+    }
+
+    .control-buttons button {
+        font-size: 1rem;
+    }
+}
+
 #gallery {
     text-align: center;
     padding: 5rem 9%;
@@ -248,23 +355,6 @@ span{
 .gallery-images img:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(183, 75, 75, 0.5);
-}
-
-#about {
-    padding: 5rem 9%;
-    background-color: black;
-}
-
-#about h2 {
-    font-size: 3rem;
-    color: white;
-    margin-bottom: 2rem;
-    font-weight: 700;
-}
-
-#about p {
-    font-size: 1.5rem;
-    color: white;
 }
 
 #video {
